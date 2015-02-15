@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+	<!-- title and meta -->
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+		<meta content="" name="Pure CSS Material Design styles.">
+		
+		<title>Material Design CSS</title>
+
+	<!-- css -->
+		<link href="css/mdi/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="css/base.css" rel="stylesheet">
+
+	<!-- js -->
+	<!--[if lt IE 9]><script src="js/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div id="wrapper">
+	<header>
+		<div class="branding">
+			<div class="container clearfix">
+				<div class="logo">
+						<a href="http://0rleans.com"><img onerror="this.src=img/icon.png" src="img/icon.png"></a>
+				</div>
+
+				<div class="social">
+						<a href="http://github.com/dudeofawesome"><i class="mdi mdi-github-circle" style="color: white; font-size: 35px"></i></a>
+						<a href="https://twitter.com/LouisPOrleans"><i class="mdi mdi-twitter" style="color: white; font-size: 36px"></i></a>
+						<a href="http://www.linkedin.com/in/louisorleans/"><i class="mdi mdi-linkedin" style="color: white; font-size: 34px"></i></a>
+						<a href="https://plus.google.com/u/1/101466914898348498869//"><i class="mdi mdi-google-plus" style="color: white; font-size: 29px"></i></a>
+						<a href="http://www.facebook.com/Louis.Orleans"><i class="mdi mdi-facebook-box" style="color: white; font-size: 35px"></i></a>
+						<a href="mailto:louis@0rleans.com"><i class="mdi mdi-email" style="color: white; font-size: 37px"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom">
+		</div>
+	</header>
+
+	<div id="main">
+		<div class="container">
+
+<!--      LIGHT INPUT-->
+				<div class="themeColor light">
+					<h1 style="padding-left:50px; font-family:robotobold;">Light Input</h1>
+					<div class="settings">
+						<div class="row">
+							<div class="question">
+								Flat Button
+							</div>
+							<input class="material light flat" value="yes" type="button">
+
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Flat Button (Disabled)
+							</div>
+							<input disabled class="material light flat" value="yes" type="button">
+
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Raised Button
+							</div>
+							<input class="material light raised" value="ok" type="button">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Raised Button (Disabled)
+							</div>
+							<input disabled class="material light raised" value="ok" type="button">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Floating Action Button
+							</div>
+							<input class="material light floating" value="+" type="button">
+						</div><!-- /row -->
+
+						 <div class="row">
+							<div class="question">
+								Floating Action Button (Disabled)
+							</div>
+							<input disabled class="material light floating" value="+" type="button">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Checkbox
+							</div>
+							<input class="material light" type="checkbox">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Checkbox (Disabled)
+							</div>
+							<input disabled class="material light" type="checkbox">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Checkbox (On, Disabled)
+							</div>
+							<input checked disabled class="material light" type="checkbox">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Switch
+							</div>
+							<div class="material switch">
+								<input id="toggle-1" type="checkbox">
+								<label for="toggle-1"></label>
+							</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Switch (Disabled)
+							</div>
+							<div class="material switch">
+								<input disabled id="toggle-2" class="material light" type="checkbox">
+								<label for="toggle-2"></label>
+							</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Switch (On, Disabled)
+							</div>
+							<div class="material switch">
+								<input disabled checked id="toggle-3" class="material light" type="checkbox">
+								<label for="toggle-3"></label>
+							</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Radio
+							</div>
+                            <form action=""><input checked class="material light" type="radio" name="rad1"><input class="material light" type="radio" name="rad1"></form>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Radio (Disabled)
+							</div>
+                            <form action=""><input checked disabled class="material light" type="radio" name="rad2"><input disabled class="material light" type="radio" name="rad2"></form>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Single Line Textbox
+							</div>
+							<input type="text" class="material light" style="width: 300px" placeholder="Username" /><div class="error">You done goofed</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Single Line Textbox (Disabled)
+							</div>
+							<input disabled type="text" class="material light" style="width: 300px" placeholder="Username" /><div class="error">You done goofed again!</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Single Line Textbox (Error)
+							</div>
+							<input error type="text" class="material light" style="width: 300px" placeholder="Username" /><div class="error">You done goofed</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Single Line Textbox (Error, Disabled)
+							</div>
+							<input disabled error type="text" class="material light" style="width: 300px" placeholder="Username" /><div class="error">You done goofed again!</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Multiline Textbox
+							</div>
+								<textarea class="material light" style="width: 300px; height: 50px;" placeholder="ULTRA-long password (gotta be secure)"></textarea><div class="error">You done goofed</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Multiline Textbox (Disabled)
+							</div>
+								<textarea disabled class="material light" style="width: 300px; height: 50px;" placeholder="ULTRA-long password (gotta be secure)"></textarea><div class="error">You done goofed again!</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Multiline Textbox (Error)
+							</div>
+								<textarea error class="material light" style="width: 300px; height: 50px;" placeholder="ULTRA-long password (gotta be secure)"></textarea><div class="error">You done goofed</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Multiline Textbox (Error, Disabled)
+							</div>
+								<textarea error disabled class="material light" style="width: 300px; height: 50px;" placeholder="ULTRA-long password (gotta be secure)"></textarea><div class="error">You done goofed again!</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Slider
+							</div>
+								<input type="range" class="material light" min="0" max="100">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Slider (Disabled)
+							</div>
+								<input disabled type="range" class="material light" min="0" max="100">
+						</div><!-- /row -->
+
+					</div>
+				</div>
+
+				
+				
+<!--      DARK INPUT-->
+				<div class="themeColor dark">
+					<h1 style="padding-left:50px; font-family:robotobold;">Dark Input</h1>
+					<div class="settings">
+
+						<div class="row">
+							<div class="question">
+								Flat Button
+							</div>
+							<input class="material dark flat" value="yes" type="button">
+
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Flat Button (Disabled)
+							</div>
+							<input disabled class="material dark flat" value="yes" type="button">
+
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Raised Button
+							</div>
+							<input class="material dark raised" value="ok" type="button">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Raised Button (Disabled)
+							</div>
+							<input disabled class="material dark raised" value="ok" type="button">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Floating Action Button
+							</div>
+							<input class="material dark floating" value="+" type="button">
+						</div><!-- /row -->
+
+						 <div class="row">
+							<div class="question">
+								Floating Action Button (Disabled)
+							</div>
+							<input disabled class="material dark floating" value="+" type="button">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Checkbox
+							</div>
+							<input class="material dark" type="checkbox">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Checkbox (Disabled)
+							</div>
+							<input disabled class="material dark" type="checkbox">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Checkbox (On, Disabled)
+							</div>
+							<input checked disabled class="material dark" type="checkbox">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Switch
+							</div>
+							<div class="material switch">
+								<input id="toggle-4" class="material dark" type="checkbox">
+								<label for="toggle-4"></label>
+							</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Switch (Disabled)
+							</div>
+							<div class="material switch">
+								<input disabled id="toggle-5" class="material dark" type="checkbox">
+								<label for="toggle-5"></label>
+							</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Switch (On, Disabled)
+							</div>
+							<div class="material switch">
+								<input disabled checked id="toggle-6" class="material dark" type="checkbox">
+								<label for="toggle-6"></label>
+							</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Radio
+							</div>
+                            <form action=""><input checked class="material dark" type="radio" name="rad3"><input class="material dark" type="radio" name="rad3"></form>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Radio (Disabled)
+							</div>
+                            <form action=""><input checked disabled class="material dark" type="radio" name="rad4"><input disabled class="material dark" type="radio" name="rad4"></form>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Single Line Textbox
+							</div>
+							<input type="text" class="material dark" style="width: 300px" placeholder="Username" /><div class="error">You done goofed</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Single Line Textbox (Disabled)
+							</div>
+							<input disabled type="text" class="material dark" style="width: 300px" placeholder="Username" /><div class="error">You done goofed again!</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Single Line Textbox (Error)
+							</div>
+							<input error type="text" class="material dark" style="width: 300px" placeholder="Username" /><div class="error">You done goofed</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Single Line Textbox (Error, Disabled)
+							</div>
+							<input disabled error type="text" class="material dark" style="width: 300px" placeholder="Username" /><div class="error">You done goofed again!</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Multiline Textbox
+							</div>
+								<textarea class="material dark" style="width: 300px; height: 50px;" placeholder="ULTRA-long password (gotta be secure)"></textarea><div class="error">You done goofed</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Multiline Textbox (Disabled)
+							</div>
+								<textarea disabled class="material dark" style="width: 300px; height: 50px;" placeholder="ULTRA-long password (gotta be secure)"></textarea><div class="error">You done goofed again!</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Multiline Textbox (Error)
+							</div>
+								<textarea error class="material dark" style="width: 300px; height: 50px;" placeholder="ULTRA-long password (gotta be secure)"></textarea><div class="error">You done goofed</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Multiline Textbox (Error, Disabled)
+							</div>
+								<textarea error disabled class="material dark" style="width: 300px; height: 50px;" placeholder="ULTRA-long password (gotta be secure)"></textarea><div class="error">You done goofed again!</div>
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Slider
+							</div>
+								<input type="range" class="material dark" min="0" max="100">
+						</div><!-- /row -->
+
+						<div class="row">
+							<div class="question">
+								Slider (Disabled)
+							</div>
+								<input disabled type="range" class="material dark" min="0" max="100">
+						</div><!-- /row -->
+
+					</div>
+				</div>
+
+		</div>
+	</div><!-- #main -->
+
+	<footer>
+		<div class="container">
+			<div class="clearfix">
+				<aside>
+					<ul>
+						<li><a href="http://0rleans.com/">0rleans.com</a></li>
+						<li><a href="http://0rleans.com/wp/projects">Projects</a></li>
+					</ul>
+				</aside>
+
+				<aside>
+					<ul>
+						<li><a href="http://0rleans.com/wp/about">About</a></li>
+						<li><a href="http://0rleans.com/w//contact">Contact</a></li>
+					</ul>
+				</aside>
+				<aside class="logo">
+					<a href="http://0rleans.com/"><img src="img/icon.png"></a>
+				</aside>
+			</div>
+			<div class="copyright">
+				<span>&copy;2014 Louis Orleans<br>
+				<a href="http://0rleans.com">0rleans.com</a></span>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	
+</div><!-- /#wrapper -->
+</body>
+</html>

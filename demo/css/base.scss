@@ -1,0 +1,369 @@
+@import '../../material';
+@import '../../colors';
+
+/* ============================================================
+	RESET
+============================================================ */
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto-regular-webfont.eot');
+    src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff'),
+         url('fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto-bold-webfont.eot');
+    src: url('fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('fonts/roboto-bold-webfont.woff') format('woff'),
+         url('fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a img {
+	border: none;
+}
+
+/* ============================================================
+	GLOBALS
+============================================================ */
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $primary;
+	color: #505050;
+	font-family: "roboto", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.8;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1;
+	font-weight: 400;
+	font-family: "roboto", serif;
+}
+
+a {
+	text-decoration: none;
+	color: #dc8c96;
+}
+
+a:hover {
+	color: #ca5160;
+}
+
+/* clear floated divs */
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* ============================================================
+	COMMON
+============================================================ */
+#wrapper {
+	min-width: 600px;
+}
+
+.themeColor {
+	vertical-align: middle;
+	padding: 50px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+.settings {
+	display: table;
+	width: 100%;
+}
+.settings .row {
+	display: table-row;
+}
+.settings .question, .settings,
+.settings .switch {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px;
+}
+.settings .question {
+	width: 600px;
+	font-family: "roboto", serif;
+	font-size: 20px;
+}
+
+/* ============================================================
+	TEMPLATE
+============================================================ */
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#main {
+	background-color: rgb(250, 250, 250);
+	padding: 30px 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+/* ============================================================
+	INFO BAR
+============================================================ */
+.info-bar {
+	background-color: $primary;
+	text-align: center;
+}
+.info-bar a.icon {
+	margin: 0 5px;
+	padding: 10px 0;
+	color: #fff;
+	font-size: 20px;
+	position: relative;
+}
+.info-bar a.icon[data-title]:hover:after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 20px;
+	content: attr(data-title);
+	padding: 5px 10px;
+	background-color: #ca5160;
+	font-family: "roboto", sans-serif;
+	color: #fff;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+/* ============================================================
+	HEADER
+============================================================ */
+header .branding {
+	padding: 40px 0;
+	background-color: $primary;
+}
+header .branding .container {
+	padding: 0 30px 0 90px;
+}
+header .social {
+	float: left;
+	width: 100%;
+	height: 60px;
+	text-align: right;
+	line-height: 60px;
+}
+header .social a {
+    transition: opacity 0.3s;
+}
+header .social a:hover {
+	opacity: 0.4;
+}
+header .logo {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-left: -60px;
+}
+header .logo img {
+	position: relative;
+	top: -25px;
+	width: 109px;
+	filter: hue-rotate(65deg) saturate(9) brightness(1.25);
+	-webkit-filter: hue-rotate(65deg) saturate(9) brightness(1.25);
+}
+header .bottom {
+	background-color: $primary;
+	padding: 10px 30px;
+	text-align: center;
+	height: 150px;
+}
+header .site-title h1 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 12px;
+}
+
+/* ============================================================
+	FOOTER
+============================================================ */
+footer {
+	padding: 30px 0;
+}
+footer .container {
+	padding: 0 30px;
+}
+footer aside {
+	width: 33.3333%;
+	float: left;
+}
+footer aside.logo {
+	text-align: right;
+}
+footer aside.logo img {
+	width: 128px;
+	filter: hue-rotate(65deg) saturate(9) brightness(1.25);
+	-webkit-filter: hue-rotate(65deg) saturate(9) brightness(1.25);
+}
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+footer ul a {
+	color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s;
+}
+footer ul a:hover {
+	color: rgba(255, 255, 255, 0.5);
+}
+footer .copyright {
+	margin-top: 30px;
+	text-align: center;
+}
+footer .copyright span {
+	color: rgba(255, 255, 255, 0.8);
+}
+footer .copyright a {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* ============================================================
+	MEDIA QUERIES
+============================================================ */
+@media all and (max-width: 960px) {
+	/* footer */
+	footer aside {
+		width: 100%;
+		float: none;
+		margin-bottom: 15px;
+	}
+	footer aside:last-child {
+		margin-bottom: 0;
+	}
+	footer aside.logo {
+		text-align: center;
+	}
+	footer ul {
+		text-align: center;
+	}
+	footer ul li {
+		display: inline-block;
+	}
+	footer ul li:after {
+		content: "\2022";
+	}
+	footer ul li:last-child:after {
+		content: none;
+	}
+	footer ul li a {
+		margin: 0 10px;
+	}
+}
+@media all and (max-width: 400px) {
+	header .branding {
+		padding: 15px 0;
+	}
+	header .branding .container {
+		padding: 0 30px;
+	}
+	header .social {
+		float: none;
+		width: 100%;
+		text-align: center;
+		line-height: 30px;
+		height: 30px;
+	}
+	header .social a i {
+		margin: 0 5px;
+	}
+	header .logo {
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+}
+.themeColor.light {
+	position: relative;
+	top: -165px;
+	background-color: rgb(238, 238, 238);
+}
+
+.themeColor.dark {
+	position:relative;
+	top: -100px;
+	background-color:rgb(51, 51, 51);
+	color: rgb(238, 238, 238);
+}
