@@ -1,0 +1,25 @@
+{
+  "name": "MaterialCSS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dudeofawesome/MaterialCSS",
+  "authors": [
+    "Louis Orleans <louis@orleans.io>"
+  ],
+  "description": "A set of pure CSS Material Design styles",
+  "main": "./material.scss",
+  "keywords": [
+    "css",
+    "material",
+    "design",
+    "scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./modules/pages/resources/scripts/bower_components",
+    "test",
+    "tests"
+  ]
+}
