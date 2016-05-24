@@ -289,18 +289,20 @@ textarea.material {
     .material[type="checkbox"]:checked::before {
       position: relative;
       top: -10px;
-      left: -7px;
+      left: -11px;
       transform: rotate(-55deg);
       display: inline-block;
       content: '|';
+      font-family: Arial;
       font-size: 22px; }
     .material[type="checkbox"]:checked::after {
       position: relative;
-      top: -13px;
+      top: -35px;
       left: 4px;
       transform: rotate(35deg);
       display: inline-block;
       content: '|';
+      font-family: Arial;
       font-size: 22px; }
     .material[type="checkbox"]:checked:disabled {
       border: 2px solid transparent; }
@@ -471,8 +473,8 @@ textarea.material {
 
 input[type=range].material {
   -webkit-appearance: none;
-  margin: 18px 0;
-  width: 100%; }
+  width: 100%;
+  margin: 18px 0; }
   input[type=range].material::-webkit-slider-runnable-track {
     width: 100%;
     height: 2px;
@@ -489,24 +491,24 @@ input[type=range].material {
     height: 2px;
     cursor: pointer;
     animate: 0.2s;
+    border: 0px;
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
     -o-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-    border: 0px; }
+    transition: background-color 0.2s; }
   input[type=range].material::-ms-track {
     width: 100%;
     height: 2px;
     cursor: pointer;
     animate: 0.2s;
+    border-width: 2px 0;
+    border-color: transparent;
+    color: transparent;
+    background: transparent;
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
     -o-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-    background: transparent;
-    border-color: transparent;
-    border-width: 2px 0;
-    color: transparent; }
+    transition: background-color 0.2s; }
   input[type=range].material::-webkit-slider-thumb {
     width: 12px;
     height: 12px;
@@ -648,20 +650,18 @@ input[type=range].material {
     outline: 2px solid #ebebeb;
     background-color: #ebebeb; }
   input[type=range].material.dark::-webkit-slider-runnable-track {
-    background-color: rgba(255, 255, 255, 0.3); }
+    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #5b5b5b; }
   input[type=range].material.dark::-moz-range-track {
     background: rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.3); }
   input[type=range].material.dark::-ms-fill-upper {
     background: rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.3); }
+  input[type=range].material.dark::-webkit-slider-thumb, input[type=range].material.dark::-moz-range-thumb, input[type=range].material.dark::-ms-thumb {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: #333333; }
   input[type=range].material.dark::-webkit-slider-thumb {
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    background-color: #333333; }
-  input[type=range].material.dark::-moz-range-thumb, input[type=range].material.dark::-ms-thumb {
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    background-color: #333333; }
-  input[type=range].material.dark::-ms-thumb {
     border: 2px solid rgba(255, 255, 255, 0.3);
     background-color: #333333; }
   input[type=range].material.dark:active::-webkit-slider-runnable-track {
@@ -682,7 +682,8 @@ input[type=range].material {
     border: 4px solid #ff8c0e;
     background-color: #ff8c0e; }
   input[type=range].material.dark:disabled::-webkit-slider-runnable-track {
-    background-color: rgba(255, 255, 255, 0.3); }
+    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #5b5b5b; }
   input[type=range].material.dark:disabled::-moz-range-track {
     background: rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.3); }
@@ -702,7 +703,8 @@ input[type=range].material {
     outline: 2px solid #333333;
     background-color: #333333; }
   input[type=range].material.dark:disabled:active::-webkit-slider-runnable-track {
-    background-color: rgba(255, 255, 255, 0.3); }
+    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #5b5b5b; }
   input[type=range].material.dark:disabled:active::-moz-range-track {
     background: rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.3); }

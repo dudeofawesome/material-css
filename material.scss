@@ -427,19 +427,21 @@ textarea.material {
         &::before {
             position: relative;
             top: -10px;
-            left: -7px;
+            left: -11px;
             transform: rotate(-55deg);
             display: inline-block;
             content: '|';
+            font-family: Arial;
             font-size: 22px;
         }
         &::after {
             position: relative;
-            top: -13px;
+            top: -35px;
             left: 4px;
             transform: rotate(35deg);
             display: inline-block;
             content: '|';
+            font-family: Arial;
             font-size: 22px;
         }
 
@@ -686,8 +688,8 @@ textarea.material {
 // START SLIDER
 input[type=range].material {
     -webkit-appearance: none;
-    margin: 18px 0;
     width: 100%;
+    margin: 18px 0;
 
     &::-webkit-slider-runnable-track {
         width: 100%;
@@ -708,29 +710,27 @@ input[type=range].material {
         height: 2px;
         cursor: pointer;
         animate: 0.2s;
+        border: 0px;
 
         -webkit-transition: background-color 0.2s;
         -moz-transition: background-color 0.2s;
         -o-transition: background-color 0.2s;
         transition: background-color 0.2s;
-
-        border: 0px;
     }
     &::-ms-track {
         width: 100%;
         height: 2px;
         cursor: pointer;
         animate: 0.2s;
+        border-width: 2px 0;
+        border-color: transparent;
+        color: transparent;
+        background: transparent;
 
         -webkit-transition: background-color 0.2s;
         -moz-transition: background-color 0.2s;
         -o-transition: background-color 0.2s;
         transition: background-color 0.2s;
-
-        background: transparent;
-        border-color: transparent;
-        border-width: 2px 0;
-        color: transparent;
     }
     // &::-webkit-slider-thumb, &::-moz-range-thumb, &::-ms-thumb {
     //  width: 12px;
@@ -997,6 +997,7 @@ input[type=range].material {
         // }
         &::-webkit-slider-runnable-track {
             background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgb(91, 91, 91);
         }
         &::-moz-range-track {
             background: rgba(255, 255, 255, 0.3);
@@ -1006,22 +1007,22 @@ input[type=range].material {
             background: rgba(255, 255, 255, 0.3);
             background-color: rgba(255, 255, 255, 0.3);
         }
-        // &::-webkit-slider-thumb, &::-moz-range-thumb, &::-ms-thumb {
-        //  border: 2px solid rgba(255, 255, 255, 0.3);
-        //  background-color: rgb(51, 51, 51);
-        // }
+        &::-webkit-slider-thumb, &::-moz-range-thumb, &::-ms-thumb {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background-color: rgb(51, 51, 51);
+        }
         &::-webkit-slider-thumb {
             border: 2px solid rgba(255, 255, 255, 0.3);
             background-color: rgb(51, 51, 51);
         }
-        &::-moz-range-thumb, &::-ms-thumb {
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            background-color: rgb(51, 51, 51);
-        }
-        &::-ms-thumb {
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            background-color: rgb(51, 51, 51);
-        }
+        // &::-moz-range-thumb, &::-ms-thumb {
+        //     border: 2px solid rgba(255, 255, 255, 0.3);
+        //     background-color: rgb(51, 51, 51);
+        // }
+        // &::-ms-thumb {
+        //     border: 2px solid rgba(255, 255, 255, 0.3);
+        //     background-color: rgb(51, 51, 51);
+        // }
 
         &:active {
             // &::-webkit-slider-runnable-track, &::-moz-range-track, &::-ms-track, &::-ms-fill-lower, &::-ms-fill-upper {
@@ -1062,6 +1063,7 @@ input[type=range].material {
             // }
             &::-webkit-slider-runnable-track {
                 background-color: rgba(255, 255, 255, 0.3);
+                background-color: rgb(91, 91, 91);
             }
             &::-moz-range-track {
                 background: rgba(255, 255, 255, 0.3);
@@ -1098,6 +1100,7 @@ input[type=range].material {
                 // }
                 &::-webkit-slider-runnable-track {
                     background-color: rgba(255, 255, 255, 0.3);
+                    background-color: rgb(91, 91, 91);
                 }
                 &::-moz-range-track {
                     background: rgba(255, 255, 255, 0.3);
