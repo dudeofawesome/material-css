@@ -1,0 +1,33 @@
+{
+  "name": "material-css",
+  "version": "0.0.12",
+  "description": "A set of pure CSS Material Design styles",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=4.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dudeofawesome/MaterialCSS.git"
+  },
+  "keywords": [
+    "css",
+    "material",
+    "design",
+    "scss",
+    "less"
+  ],
+  "author": "Louis Orleans <louis@orleans.io> (http://orleans.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dudeofawesome/MaterialCSS/issues"
+  },
+  "homepage": "https://github.com/dudeofawesome/MaterialCSS",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "MaterialCSS",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "homepage": "https://github.com/dudeofawesome/MaterialCSS",
   "authors": [
     "Louis Orleans <louis@orleans.io>"
@@ -11,7 +11,8 @@
     "css",
     "material",
     "design",
-    "scss"
+    "scss",
+    "less"
   ],
   "license": "MIT",
   "ignore": [
