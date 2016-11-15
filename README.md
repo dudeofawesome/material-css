@@ -1,7 +1,9 @@
 # MaterialCSS
 A set of pure CSS Material Design styles
 
-Demo - http://dudeofawesome.github.io/MaterialCSS/
+[![demo/screen-shot.png](demo/screen-shot.png)](https://dudeofawesome.github.io/MaterialCSS/)
+
+Demo - https://dudeofawesome.github.io/MaterialCSS/
 
 How to use:
 
