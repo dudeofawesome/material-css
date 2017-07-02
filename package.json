@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dudeofawesome/MaterialCSS.git"
+    "url": "https://github.com/dudeofawesome/material-css.git"
   },
   "keywords": [
     "css",
@@ -20,12 +20,12 @@
     "scss",
     "less"
   ],
-  "author": "Louis Orleans <louis@orleans.io> (http://orleans.io/)",
+  "author": "Louis Orleans <louis@orleans.io> (https://orleans.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dudeofawesome/MaterialCSS/issues"
+    "url": "https://github.com/dudeofawesome/material-css/issues"
   },
-  "homepage": "https://github.com/dudeofawesome/MaterialCSS",
+  "homepage": "https://dudeofawesome.github.com/material-css",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.1"
