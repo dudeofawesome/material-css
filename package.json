@@ -1,6 +1,6 @@
 {
   "name": "material-css",
-  "version": "0.0.12",
+  "version": "1.0.0-0",
   "description": "A set of pure CSS Material Design styles",
   "main": "gulpfile.js",
   "scripts": {
