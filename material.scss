@@ -411,81 +411,13 @@ textarea.material {
   -webkit-transition: box-shadow 0.2s, border 0.2s, background-color 0.2s;
   -o-transition: box-shadow 0.2s, border 0.2s, background-color 0.2s;
 
-  &.light {
-    border: 2px solid rgba(0, 0, 0, 0.54);
-
-    & + label {
-      color: rgba(0, 0, 0, 0.8);
-    }
-
-    &:checked {
-      &::before {
-        color: rgba(255, 255, 255, 0.8);
-      }
-
-      &::after {
-        color: rgba(255, 255, 255, 0.8);
-      }
-
-      &:active {
-        box-shadow: 0px 0px 0px 14px rgba(0, 0, 0, 0.1);
-      }
-    }
-
-    &:active {
-      box-shadow: 0px 0px 0px 14px transparentize($secondary-1, 0.8);
-    }
-
-    &:disabled {
-      border: 2px solid rgba(0, 0, 0, 0.26);
-
-      &:checked {
-        background-color: rgba(0, 0, 0, 0.26);
-      }
-    }
-  }
-
-  &.dark {
-    border: 2px solid rgba(255, 255, 255, 0.7);
-
-    & + label {
-      color: rgba(255, 255, 255, 0.8);
-    }
-
-    &:checked {
-      &::before {
-        color: rgba(255, 255, 255, 0.8);
-      }
-
-      &::after {
-        color: rgba(255, 255, 255, 0.8);
-      }
-
-      &:active {
-        box-shadow: 0px 0px 0px 14px rgba(255, 255, 255, 0.1);
-      }
-    }
-
-    &:active {
-      box-shadow: 0px 0px 0px 14px transparentize($secondary-1, 0.8);
-    }
-
-    &:disabled {
-      border: 2px solid rgba(255, 255, 255, 0.3);
-
-      &:checked {
-        background-color: rgba(255, 255, 255, 0.3);
-      }
-    }
-  }
-
   &:checked {
     position: relative;
     top: -6px;
     text-align: center;
     overflow: hidden;
     vertical-align: middle;
-    border: 2px solid $secondary-1;
+    border: none;
     background-color: $secondary-1;
 
     &::before {
@@ -508,13 +440,108 @@ textarea.material {
 
     &:disabled {
       border: 2px solid transparent;
+    }
+  }
+
+  &[indeterminate] {
+    position: relative;
+    top: -6px;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    border: none;
+    background-color: $secondary-1;
+
+    &::before {
+      position: relative;
+      display: inline-block;
+      content: '-';
+      font-family: Arial;
+      font-size: 22px;
+      line-height: 11px;
+    }
+
+    &:disabled {
+      border: 2px solid transparent;
 
       &::before {
-        // top: -9px;
+        transform: translateX(-0.5px);
+      }
+    }
+  }
+
+  &.light {
+    border: 2px solid rgba(0, 0, 0, 0.54);
+
+    & + label {
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    &:checked,
+    &[indeterminate] {
+      border: none;
+
+      &::before {
+        color: rgba(255, 255, 255, 0.8);
       }
 
       &::after {
-        // top: -11px;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      &:active {
+        box-shadow: 0px 0px 0px 14px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &:active {
+      box-shadow: 0px 0px 0px 14px transparentize($secondary-1, 0.8);
+    }
+
+    &:disabled {
+      border: 2px solid rgba(0, 0, 0, 0.26);
+
+      &:checked,
+      &[indeterminate] {
+        border: none;
+        background-color: rgba(0, 0, 0, 0.26);
+      }
+    }
+  }
+
+  &.dark {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+
+    & + label {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    &:checked,
+    &[indeterminate] {
+      &::before {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      &::after {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      &:active {
+        box-shadow: 0px 0px 0px 14px rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    &:active {
+      box-shadow: 0px 0px 0px 14px transparentize($secondary-1, 0.8);
+    }
+
+    &:disabled {
+      border: 2px solid rgba(255, 255, 255, 0.3);
+
+      &:checked,
+      &[indeterminate] {
+        border: none;
+        background-color: rgba(255, 255, 255, 0.3);
       }
     }
   }
