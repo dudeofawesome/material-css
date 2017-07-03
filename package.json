@@ -4,6 +4,8 @@
   "description": "A set of pure CSS Material Design styles",
   "main": "gulpfile.js",
   "scripts": {
+    "dev": "gulp dev",
+    "lint": "gulp lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -17,6 +19,7 @@
     "css",
     "material",
     "design",
+    "sass",
     "scss",
     "less"
   ],
@@ -28,6 +31,9 @@
   "homepage": "https://dudeofawesome.github.com/material-css",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.1"
+    "gulp-sass": "^2.3.1",
+    "gulp-stylelint": "^3.9.0",
+    "stylelint": "^7.12.0",
+    "stylelint-config-standard": "^16.0.0"
   }
 }
