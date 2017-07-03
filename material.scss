@@ -421,21 +421,21 @@ textarea.material {
     background-color: $secondary-1;
 
     &::before {
-      position: relative;
-      transform: translate(-10px, -11px) rotate(-55deg);
+      position: absolute;
+      width: 2px;
+      height: 5px;
+      transform: translate(-4px, 6px) rotate(-45deg);
       display: inline-block;
-      content: '|';
-      font-family: Arial;
-      font-size: 22px;
+      content: ' ';
     }
 
     &::after {
-      position: relative;
-      transform: translate(6px, -39px) rotate(35deg);
+      position: absolute;
+      width: 2px;
+      height: 9px;
+      transform: translate(0px, 3px) rotate(45deg);
       display: inline-block;
-      content: '|';
-      font-family: Arial;
-      font-size: 22px;
+      content: ' ';
     }
 
     &:disabled {
@@ -481,16 +481,24 @@ textarea.material {
     &[indeterminate] {
       border: none;
 
+      &:active {
+        box-shadow: 0px 0px 0px 14px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &:checked {
       &::before {
-        color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
       }
 
       &::after {
-        color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
       }
+    }
 
-      &:active {
-        box-shadow: 0px 0px 0px 14px rgba(0, 0, 0, 0.1);
+    &[indeterminate] {
+      &::before {
+        color: rgba(255, 255, 255, 0.8);
       }
     }
 
@@ -518,16 +526,26 @@ textarea.material {
 
     &:checked,
     &[indeterminate] {
-      &::before {
-        color: rgba(255, 255, 255, 0.8);
-      }
-
-      &::after {
-        color: rgba(255, 255, 255, 0.8);
-      }
+      border: none;
 
       &:active {
         box-shadow: 0px 0px 0px 14px rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    &:checked {
+      &::before {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+
+      &::after {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    &[indeterminate] {
+      &::before {
+        color: rgba(255, 255, 255, 0.8);
       }
     }
 
