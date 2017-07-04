@@ -24,5 +24,6 @@ gulp.task('watch:demo', () => {
 });
 
 gulp.task('lint', ['lint:sass']);
+gulp.task('build', ['build:sass:demo']);
 gulp.task('dev', ['watch:demo']);
 gulp.task('default', ['build:sass:demo']);

@@ -568,6 +568,9 @@ textarea.material {
 
 // START TOGGLE SWITCH
 .material.switch {
+  display: inline-block;
+  margin: 5px;
+
   > input[type=checkbox] {
     position: absolute;
     transform: translateX(-9999px);
