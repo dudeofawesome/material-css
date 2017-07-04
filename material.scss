@@ -638,16 +638,6 @@ textarea.material {
         transition-property: margin, background-color, box-shadow, -moz-box-shadow, -webkit-box-shadow;
         transition-duration: 0.2s;
       }
-
-      // &:active {
-      //   // Thumb
-      //   &::after {
-      //     transform: translate(-10px, -10px);
-      //     border-style: solid;
-      //     border-width: 10px;
-      //     box-shadow: none;
-      //   }
-      // }
     }
 
     &:checked {
@@ -696,6 +686,13 @@ textarea.material {
       &::after {
         background-color: rgb(250, 250, 250);
       }
+
+      &:active {
+        // Thumb
+        &::after {
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0px 15px rgba(0, 0, 0, 0.1);
+        }
+      }
     }
 
     &:checked {
@@ -708,6 +705,13 @@ textarea.material {
         // Thumb
         &::after {
           background-color: $secondary-1;
+        }
+
+        &:active {
+          // Thumb
+          &::after {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0px 15px rgba($secondary-1, 0.2);
+          }
         }
       }
     }
@@ -723,6 +727,13 @@ textarea.material {
         &::after {
           background-color: rgb(189, 189, 189);
         }
+
+        &:active {
+          // Thumb
+          &::after {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0px 15px rgba(0, 0, 0, 0.1);
+          }
+        }
       }
     }
   }
@@ -731,12 +742,19 @@ textarea.material {
     & + label {
       // Track
       &::before {
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255, 0.3);
       }
 
       // Thumb
       &::after {
         background-color: rgb(189, 189, 189);
+      }
+
+      &:active {
+        // Thumb
+        &::after {
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0px 15px rgba(255, 255, 255, 0.1);
+        }
       }
     }
 
@@ -751,6 +769,13 @@ textarea.material {
         &::after {
           background-color: $secondary-1;
         }
+
+        &:active {
+          // Thumb
+          &::after {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0px 15px rgba($secondary-1, 0.2);
+          }
+        }
       }
     }
 
@@ -764,6 +789,13 @@ textarea.material {
         // Thumb
         &::after {
           background-color: rgb(66, 66, 66);
+        }
+
+        &:active {
+          // Thumb
+          &::after {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0px 15px rgba(255, 255, 255, 0.1);
+          }
         }
       }
     }
